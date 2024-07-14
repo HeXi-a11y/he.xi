@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}he.xi{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Форум</h1>
+        <a href="{% url 'newpost' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Новая запись</li><a></a>
+        {% for i in news %}
+            <div class="alert alert-danger">
+                <h3>{{ i.title }}</h3>
+                <p>{{ i.desc }}</p>
+                <a href="{% url 'post-detail' i.id %}" class="btn btn-info">Подробнее</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
