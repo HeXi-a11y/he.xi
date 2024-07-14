@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}he.xi{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1>infooooo (test)</h1>
+        {% for i in levelsDict %}
+            {% if i == i %}
+                {% filter lower %}
+                <p>{{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}} {{i}}</p>
+                {% endfilter %}
+            {% endif %}
+        {% endfor %}
+        <button class="btn btn-danger">Удалить аккаунт</button>
+    </div>
+{% endblock %}

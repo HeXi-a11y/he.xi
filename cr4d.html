@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}he.xi{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>CR4D</h1>
+        <p>CR4D - мой сервер в Майнкрафт. Его суть в том, что у всех по умолчанию стоит креатив и игроки могут строить всё, что хотят. Сервер был создан 29.06.2023</p>
+        <a href="{% url 'cr4drules' %}"><button class="btn btn-success">Правила</button></a>
+        <a href="{% url 'cr4dbuildings' %}"><button class="btn btn-success">Постройки</button></a>
+        <a href="{% url 'cr4dstatistics' %}"><button class="btn btn-dark">Статистика</button></a>
+    </div>
+{% endblock %}
